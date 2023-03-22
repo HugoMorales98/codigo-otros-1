@@ -1,8 +1,9 @@
 const baseEndpoint = 'https://api.github.com';
 const usersEndpoint = `${baseEndpoint}/users`;
-const $n = document.querySelector('name');
+// Asignar como ID name, blog y location
+const $n = document.querySelector('#name');
 const $b = document.querySelector('#blog');
-const $l = document.querySelector('.location');
+const $l = document.querySelector('#location');
 
 async function displayUser(username) { // se debe agregar "async" antes del parámetro de la función
   $n.textContent = 'cargando...';
